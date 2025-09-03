@@ -1,4 +1,4 @@
-# TASK 2: Stock Portfolio Tracker
+
 
 # Hardcoded stock prices
 stock_prices = {
@@ -21,7 +21,7 @@ for i in range(n):
     if stock in stock_prices:
         portfolio[stock] = portfolio.get(stock, 0) + quantity
     else:
-        print(f"⚠️ Stock {stock} not found in price list!")
+        print(f"Stock {stock} not found in price list!")
 
 # Calculate total investment
 total_value = 0
@@ -33,7 +33,7 @@ for stock, qty in portfolio.items():
 
 print("\nTotal Investment Value = ", total_value)
 
-# Optional: Save to file
+
 save = input("Do you want to save the result to file? (yes/no): ").lower()
 if save == "yes":
     with open("portfolio.txt", "w") as file:
@@ -41,4 +41,5 @@ if save == "yes":
         for stock, qty in portfolio.items():
             file.write(f"{stock}: {qty} × {stock_prices[stock]} = {stock_prices[stock] * qty}\n")
         file.write(f"\nTotal Investment Value = {total_value}")
-    print("Portfolio saved to portfolio.txt ✅")
+    print("Portfolio saved to portfolio.txt ")
+
