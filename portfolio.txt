@@ -1,0 +1,6 @@
+Stock Portfolio Summary
+MSFT: 2 × 300 = 600
+TSLA: 5 × 250 = 1250
+AAPL: 3 × 180 = 540
+
+Total Investment Value = 2390
